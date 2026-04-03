@@ -1,7 +1,10 @@
-import Abstraction.Door;
-import Abstraction.ElectronicFunctionality;
-import Abstraction.Gameboy;
-import Abstraction.PS5;
+//import Abstraction.Door;
+//import Abstraction.ElectronicFunctionality;
+//import Abstraction.Gameboy;
+//import Abstraction.PS5;
+import Workout.Aerobics;
+import Workout.Lift;
+import Workout.WorkoutFunctionality;
 
 public class Main {
     static void main(String[] args) {
@@ -25,19 +28,32 @@ public class Main {
 //        newDoor.print();
 //        newDoor.slam();
 
-        int a = 2;
-        ElectronicFunctionality electronic;
+//        int a = 2;
+//        ElectronicFunctionality electronic;
+//
+//        if(a == 1){
+//            electronic = new PS5();
+//        } else {
+//            electronic = new Gameboy();
+//        }
+//
+//        electronic.on();
+//        electronic.off();
+//        electronic.restart();
+//        electronic.standby();
+//        electronic.printElectronic();
 
-        if(a == 1){
-            electronic = new PS5();
-        } else {
-            electronic = new Gameboy();
-        }
 
-        electronic.on();
-        electronic.off();
-        electronic.restart();
-        electronic.standby();
-        electronic.printElectronic();
+        Lift lift1 = new Lift();
+
+        lift1.squats();
+        lift1.benchPress();
+        lift1.deadlift();
+
+
+        Aerobics run1 = new Aerobics();
+
+        run1.running();
+
     }
 }
