@@ -11,7 +11,7 @@ public class ForLoop {
     public static void loop2(){
        int one = 1;
        int two = 20;
-       for (char j ='a'; j <= 'z'; j++, one++, two = two+20 ){
+       for (char j ='a'; j <= 'z'; j++, one++, two = two + 20 ){
            System.out.println(one + " " + two + " " +j);
        }
 
